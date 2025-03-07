@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Postagem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="formulario-post">
+        <form id="formPost">
+          <input
+            type="text"
+            id="campoTitulo"
+            placeholder="Digite o título"
+            required
+          />
+          <textarea
+            id="campoTexto"
+            placeholder="Escreva sua mensagem"
+            required
+          ></textarea>
+          <button type="submit">Publicar</button>
+        </form>
+      </section>
+
+      <section class="area-post">
+        <article>
+          <h2 id="mostraTitulo"></h2>
+          <p id="mostraTexto"></p>
+        </article>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
